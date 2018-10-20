@@ -1,4 +1,4 @@
-# lucene-search-engine
+# lucene-search-engine 🔍
 
 A [Lucene](https://lucene.apache.org/) implementation of indexing and searching documents from the [Cranfield collection](http://ir.dcs.gla.ac.uk/resources/test_collections/cran/), evaluated using [trec_eval](https://trec.nist.gov/trec_eval/).
 
@@ -28,13 +28,17 @@ The output of run.sh should look like this:
 |ap 		|0.425   |0.375   |0.05			|
 |...|...|...|...|
 
-These are the metrics from trec_eval, the results of the application (Geoff's), the results given as an example in CS7IS3 (Seamus') and the difference between the two results for that metric.
+These outputs represent: 
+* The metrics from trec_eval.
+* The results of the application (Geoff's).
+* The results given as an example/ground truth in the TCD Computer Science module CS7IS3 (Seamus').
+* The difference between the two results for that metric.
 
 ## Files
 
-* **run.sh** packages the maven app, indexes the cran files, performs the cran queries across the indexes, runs trec_eval, creates a results file and outputs the results of trec_eval.
-* **IndexFiles.java** contains the code for indexing the cranfield documents.
-* **CustomAnalyzer.java** contains the custom analyzer for analyzing document and query content.
-* **SearchFiles.java** contains the code for running the cranfield queries and creating the results file.
+* [**run.sh**](https://github.com/nating/lucene-search-engine/blob/master/run.sh) packages the maven app, indexes the cran files, performs the cran queries across the indexes, runs trec_eval, creates a results file and outputs the results of trec_eval.
+* [**IndexFiles.java**](https://github.com/nating/lucene-search-engine/blob/master/luceneapp/src/main/java/com/mycompany/luceneapp/IndexFiles.java) contains the code for indexing the cranfield documents.
+* [**CustomAnalyzer.java**](https://github.com/nating/lucene-search-engine/blob/master/luceneapp/src/main/java/com/mycompany/luceneapp/CustomAnalyzer.java) contains the custom analyzer for analyzing document and query content.
+* [**SearchFiles.java**](https://github.com/nating/lucene-search-engine/blob/master/luceneapp/src/main/java/com/mycompany/luceneapp/SearchFiles.java) contains the code for running the cranfield queries and creating the results file.
 
 
