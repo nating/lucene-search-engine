@@ -4,6 +4,8 @@ A [Lucene](https://lucene.apache.org/) implementation of indexing and searching 
 
 ## Usage
 
+*(You will need [maven](https://maven.apache.org/), [java](https://www.java.com/), [python](https://www.python.org/) x)*
+
 To download and run the code:
 ```bash
 git clone https://github.com/nating/lucene-search-engine
